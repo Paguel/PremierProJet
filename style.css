@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+header{
+    top: 0; left: 0; right: 0;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    position: fixed;
+    z-index: 100px;
+}
+header .container .logo{
+    margin-left: 100px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #5fccff, #a95dff, #fa5dff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header .container .logo h1{
+    font-size: 22px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header .container .navbars{
+    margin-top: 30px;
+    margin-right: 80px;
+    font-size: 19px;
+}
+header .container .navbars a{
+    margin: 15px;
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+}
+header .container .navbars a:hover{
+    color: rgb(0, 207, 207);
+}
+#Home{
+    display: flex;
+    justify-content: space-between;
+}
+#Home .texte p{
+    margin-top: 290px;
+    margin-left: 100px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+#Home .image img{
+    height: 220px;
+    width: 220px;
+    margin-top: 250px;
+    margin-right: 100px;
+    border: 4px solid #fa5dff;
+    border-radius: 150px;
+}
+#Home .texte span{
+    background: linear-gradient(90deg, #5fccff, #a95dff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#TechStacks{
+    margin-top: 150px;
+}
+#TechStacks h1{
+    text-align: center;
+    color: rgb(0, 0, 65);
+    font-size: 35px;
+}
+#TechStacks p{
+    text-align: center;
+}
+#TechStacks .tech {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#TechStacks .tech img {
+    margin-top: 30px;
+    width: 70%;
+    max-width: 70px;
+    height: auto;
+    padding: 50px;
+}
+#Projet {
+    margin-top: 150px;
+}
+#Projet h1{
+    text-align: center;
+    color: rgb(0, 0, 65);
+    font-size: 35px;
+}
+#Projet P{
+    text-align: center;
+}
+#Projet .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(283px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+#Projet .project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+#Projet .project-card img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+#Projet .description {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+}
+#Projet .description a{
+    color: #333;
+    font-size: 15px;
+    text-decoration: none;
+}
+#Contanct .logo{
+    margin-left: 100px;
+    color: rgb(80, 79, 79);
+    margin-top: 100px;
+}
+#Contanct{
+    display: flex;
+    justify-content: space-between;
+}
+#Contanct .logo h1{
+    font-size: 22px;
+}
+#Contanct .navbars{
+    margin-top: 125px;
+    margin-right: 100px;
+    font-size: 19px;
+}
+#Contanct .navbars a{
+    margin: 15px;
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+}
+#Contanct .navbars a:hover{
+    color: rgb(0, 207, 207);
+}
+hr{
+    width: 1150px;
+}
+footer .footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer .logo{
+    margin-right: 100px;
+}
+footer .footer .navbars{
+    margin-left: 90px;
+    margin-top: 20px;
+}
+footer .footer .navbars a{
+    margin: 15px;
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+}
+footer .footer .navbars a:hover{
+    color: rgb(0, 207, 207);
+}
