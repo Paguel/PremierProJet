@@ -110,7 +110,7 @@ header .container .navbars a:hover{
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 #Projet .project-card img {
@@ -119,7 +119,7 @@ header .container .navbars a:hover{
     object-fit: cover;
     display: block;
 }
-#Projet .project-card h1{
+#Projet .project-card h1 {
     font-size: 25px;
 }
 #Projet .description {
@@ -128,7 +128,7 @@ header .container .navbars a:hover{
     color: #333;
     line-height: 1.4;
 }
-#Projet .description a{
+#Projet .description a {
     color: #333;
     font-size: 15px;
     text-decoration: none;
@@ -179,4 +179,46 @@ footer .footer .navbars a{
 }
 footer .footer .navbars a:hover{
     color: rgb(0, 207, 207);
+}
+@media screen and (max-width: 780px){
+    header .container {
+        display: block;
+        background-color: rgb(255, 255, 255);
+    }
+    header .container .navbars a{
+        display: block;
+        text-align: center;
+    }
+    #Home{
+        display: block;
+    }
+    #Home .texte{
+        text-align: center;
+    }
+    #Home .image img{
+        margin-left: 130px;
+    }
+    #Contanct{
+        display: block;
+        line-height: 5px;
+    }
+    #Contanct .logo{
+        margin-left: 35px;
+    }
+    #Contanct .navbars a{
+        margin: 6px;
+        margin-left: 30px;
+    }
+    footer hr{
+        width: 470px;
+    }
+    footer .footer{
+        display: block;
+    }
+    footer .footer .navbars a{
+        margin: 5px;
+    }
+    footer .footer .logo{
+        margin-left: 19px;
+    }
 }
