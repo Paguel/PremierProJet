@@ -25,7 +25,7 @@ header .container{
     justify-content: space-between;
 }
 header .container .navbars{
-    margin-top: 30px;
+    margin-top: 15px;
     margin-right: 80px;
     font-size: 19px;
 }
@@ -133,6 +133,9 @@ header .container .navbars a:hover{
     font-size: 15px;
     text-decoration: none;
 }
+#Projet .description a:hover{
+    color: rgb(0, 207, 207);
+}
 #Contanct .logo{
     margin-left: 100px;
     color: rgb(80, 79, 79);
@@ -180,23 +183,88 @@ footer .footer .navbars a{
 footer .footer .navbars a:hover{
     color: rgb(0, 207, 207);
 }
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .burger {
+    display: none;
+}
+header input{
+    display: none;
+}
+header .navbars {
+    display: flex;
+    gap: 1rem;
+}
 @media screen and (max-width: 780px){
     header .container {
-        display: block;
-        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+        align-items: flex-start;
     }
-    header .container .navbars a{
+    header .burger {
         display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    header .navbars {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    header .burger {
+        transform: translateY(-50px);
+        margin-left: 400px;
+    }
+    header #menu-toggle {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+    header #menu-toggle:checked + .burger + .navbars {
+        display: flex;
+    }
+    header .navbars{
+        background-color: white;
+        transform: translateY(-70px);
+    }
+    header .navbars a {
+        line-height: 5px;
         text-align: center;
     }
     #Home{
         display: block;
     }
-    #Home .texte{
+    #Home .texte {
+        padding-right: 90px;
         text-align: center;
+    }
+    #Home .texte p{
+        font-size: 45px;
+        margin-top: 400px;
+    }
+    #Home .image{
+        margin-top: -870px;
     }
     #Home .image img{
         margin-left: 130px;
+    }
+    #TechStacks{
+        margin-top: 500px;
+    }
+    #TechStacks h1{
+        font-size: 30px;
+    }
+    #TechStacks .tech{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    #Projet h1{
+        font-size: 30px;
     }
     #Contanct{
         display: block;
@@ -210,7 +278,7 @@ footer .footer .navbars a:hover{
         margin-left: 30px;
     }
     footer hr{
-        width: 470px;
+        width: 450px;
     }
     footer .footer{
         display: block;
