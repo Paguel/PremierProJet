@@ -198,95 +198,129 @@ header .navbars {
     display: flex;
     gap: 1rem;
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) {
+    /* === Header === */
     header .container {
-        flex-direction: column;
-        align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
     }
+  
     header .burger {
-        display: block;
-        font-size: 28px;
-        cursor: pointer;
+      display: block;
+      font-size: 1.75rem;
+      cursor: pointer;
+      margin-left: auto;
+      margin-top: 0.5rem;
     }
+  
     header .navbars {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1rem;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+      background-color: white;
+      padding: 1rem 0;
     }
-    header .burger {
-        transform: translateY(-50px);
-        margin-left: 400px;
-    }
+  
     header #menu-toggle {
-        position: absolute;
-        opacity: 0;
-        pointer-events: none;
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
     }
+  
     header #menu-toggle:checked + .burger + .navbars {
-        display: flex;
+      display: flex;
     }
-    header .navbars{
-        background-color: white;
-        transform: translateY(-70px);
-    }
+  
     header .navbars a {
-        line-height: 5px;
-        text-align: center;
+      text-align: center;
+      padding: 0.5rem 0;
     }
-    #Home{
-        display: block;
+  
+    /* === Section Home === */
+    #Home {
+      display: block;
+      text-align: center;
+      padding: 2rem 1rem;
     }
+  
     #Home .texte {
-        padding-right: 90px;
-        text-align: center;
+      padding: 0;
     }
-    #Home .texte p{
-        font-size: 45px;
-        margin-top: 400px;
+  
+    #Home .texte p {
+      font-size: 2rem;
+      margin-top: 4rem;
     }
-    #Home .image{
-        margin-top: -870px;
+  
+    #Home .image {
+      margin-top: 2rem;
     }
-    #Home .image img{
-        margin-left: 130px;
+  
+    #Home .image img {
+      max-width: 80%;
+      height: auto;
     }
-    #TechStacks{
-        margin-top: 500px;
+  
+    /* === TechStacks === */
+    #TechStacks {
+      margin-top: 4rem;
+      padding: 0 1rem;
     }
-    #TechStacks h1{
-        font-size: 30px;
+  
+    #TechStacks h1 {
+      font-size: 1.875rem;
+      text-align: center;
     }
-    #TechStacks .tech{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
+  
+    #TechStacks .tech {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      justify-items: center;
     }
-    #Projet h1{
-        font-size: 30px;
+  
+    /* === Projet === */
+    #Projet h1 {
+      font-size: 1.875rem;
+      text-align: center;
     }
-    #Contanct{
-        display: block;
-        line-height: 5px;
+  
+    /* === Contact (corrigé) === */
+    #Contanct {
+      display: block;
+      padding: 2rem 1rem;
+      text-align: center;
     }
-    #Contanct .logo{
-        margin-left: 35px;
+  
+    #Contanct .logo {
+      margin: 0 auto 1rem;
     }
-    #Contanct .navbars a{
-        margin: 6px;
-        margin-left: 30px;
+  
+    #Contanct .navbars a {
+      margin: 0.5rem;
+      display: inline-block;
     }
-    footer hr{
-        width: 450px;
+  
+    /* === Footer === */
+    footer hr {
+      width: 100%;
+      max-width: 450px;
+      margin: 1rem auto;
     }
-    footer .footer{
-        display: block;
+  
+    footer .footer {
+      display: block;
+      text-align: center;
+      padding: 1rem 0;
     }
-    footer .footer .navbars a{
-        margin: 5px;
+  
+    footer .footer .navbars a {
+      display: inline-block;
+      margin: 0.5rem;
     }
-    footer .footer .logo{
-        margin-left: 19px;
+  
+    footer .footer .logo {
+      margin-bottom: 1rem;
     }
-}
+  }  
