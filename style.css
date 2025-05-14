@@ -251,10 +251,10 @@ header .navbars {
     #Home .texte p {
         font-size: 28px;
         margin: 0;
-        margin-top: 100px;
+        margin-top: 250px;
     }
     #Home .image {
-        margin-top: 1.5rem;
+        margin-top: -25rem;
     }
     #Home .image img {
         width: 120px;
@@ -262,7 +262,7 @@ header .navbars {
         margin: 0 auto;
     }
     #TechStacks {
-        margin-top: 3rem;
+        margin-top: 25rem;
         padding: 0 1rem;
         text-align: center;
     }
@@ -286,8 +286,13 @@ header .navbars {
     #Projet h1 {
         font-size: 24px;
     }
+    #Projet .project-card{
+        margin-right: 15px;
+    }
     #Contanct{
         display: block;
+    }#Contanct .logo{
+        text-indent: -50px;
     }
     #Contanct .navbars{
        margin: 4rem;
