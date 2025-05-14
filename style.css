@@ -297,7 +297,7 @@ header .navbars {
         text-indent: -60px;
     }
     #Contanct .logo h1{
-        font-size: 16px;
+        font-size: 14px;
         color: rgb(80, 79, 79);
     }
     #Contanct .navbars{
@@ -307,7 +307,7 @@ header .navbars {
        margin-top: 50px;
     }
     #Contanct .navbars a{
-        font-size: 14px;
+        font-size: 12px;
     }
     footer hr {
         width: 90%;
@@ -320,7 +320,7 @@ header .navbars {
     }
     footer .footer .navbars {
         display: flex;
-        font-size: 12px;
+        font-size: 10px;
         margin-right: 6rem;
     }
     footer .footer .logo {
@@ -331,6 +331,6 @@ header .navbars {
         margin-left: 20px;
         color: rgb(80, 79, 79);
         font-size: 11px;
-        margin-left: 30px;
+        margin-left: 25px;
     }
 }
