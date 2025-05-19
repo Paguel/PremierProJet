@@ -216,7 +216,7 @@ header .navbars {
         cursor: pointer;
         align-self: flex-end;
         transform: none;
-        transform: translateY(-40px);
+        transform: translateY(-45px);
     }
     header .navbars {
         display: none;
