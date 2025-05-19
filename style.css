@@ -37,6 +37,9 @@ header .container .navbars a{
 header .container .navbars a:hover{
     color: rgb(0, 207, 207);
 }
+header .container .reseaux{
+    margin: 15px;
+}
 #Home{
     display: flex;
     justify-content: space-between;
@@ -208,12 +211,12 @@ header .navbars {
     }
     header .burger {
         display: block;
-        font-size: 28px;
-        margin-right: 300px;
+        font-size: 23px;
+        margin-right: 310px;
         cursor: pointer;
         align-self: flex-end;
         transform: none;
-        transform: translateY(-50px);
+        transform: translateY(-40px);
     }
     header .navbars {
         display: none;
@@ -221,6 +224,10 @@ header .navbars {
         width: 100%;
         background-color: white;
         margin-top: 1rem;
+    }
+    header .reseaux{
+        display: flex;
+        justify-content: center;
     }
     header #menu-toggle {
         position: absolute;
@@ -237,6 +244,9 @@ header .navbars {
     header .navbars a {
         text-align: center;
         display: block;
+    }
+    header .container .logo h1{
+        font-size: 20px;
     }
     #Home {
         display: flex;
@@ -286,14 +296,22 @@ header .navbars {
     #Projet h1 {
         font-size: 24px;
     }
-    #Projet .project-card{
-        margin-right: 15px;
+    #Projet .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(283px, 1fr));
+        gap: 20px;
+        padding: 2px;
+    }
+    #Projet .grid-container .project-card h1{
+        font-size: 20px;
     }
     #Contanct{
         display: block;
     }
     #Contanct .logo{
         text-indent: -50px;
+        gap: 20px;
+        padding: 2px;
     }
     #Contanct .logo h1{
         font-size: 15px;
