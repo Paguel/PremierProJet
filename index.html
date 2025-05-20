@@ -22,7 +22,7 @@
                 <a href="#About">About</a>
                 <a href="#TechStacks">TechStacks</a>
                 <a href="#Projet">Projet</a>
-                <a href="#Contanct">Contanct</a>
+                <a href="#Contanct">Contact</a>
                 <nav class="reseaux" id="reseaux">
                   <a href="https://www.linkedin.com/in/paguel-ferdinand-65a876305" target="_blank"><i class="fab fa-linkedin"></i></a>
                   <a href="https://github.com/paguel" target="_blank"><i class="fab fa-github"></i></a>
@@ -133,13 +133,31 @@
             <a href="#About">About</a>
             <a href="#TechStacks">TechStacks</a>
             <a href="#Projet">Projet</a>
-            <a href="#Contanct">Contanct</a>
+            <a href="#Contanct">Contact</a>
           </nav>
           <div class="logo">
             <p>&copy; 2025 Paguel Ferdinand. Tous droits réservés</p>
           </div>
         </div>
     </footer>
+
+
+    <script>
+
+      document.querySelectorAll('.navbars a').forEach(link => {
+        link.addEventListener('click', () => {
+          document.getElementById('menu-toggle').checked = false;
+        });
+      });
+
+      document.querySelectorAll('.reseaux a').forEach(Link => {
+        Link.addEventListener('click', () => {
+          document.getElementById('menu-toggle').checked = false;
+        });
+      });
+
+    </script>
+
 
 </body>
 </html>
